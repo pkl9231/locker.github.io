@@ -1,0 +1,37 @@
+<section>
+
+    <div class="main_dash">
+        {{> layout/leftmenu}}
+        <div class="right_part">
+            <div class="crt">
+                <div class="left_headtxt">
+                    <h4>Intervention</h4>
+                </div>
+                <div class="right_editbtn"><a href="/add-intervention"><button type="button"
+                            class="login100-form-btn">Create New</button></a></div>
+            </div>
+            <table class="ta-table-all ta-hoverable">
+                <thead>
+                    <tr class="ta-light-grey">
+                        <th>Title</th>
+                        <th>Department</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                {{#each data}}
+                <tr>
+                    <td>{{title}}</td>
+                    <td>{{department}}</td>
+                    <td>{{comment}}</td>
+                    <td>{{status}}</td>
+                    <td><a href="/edit/{{id}}" class="edit inveEdit" data-id="{{id}}"><i class="fa fa-edit"></i></a>&nbsp; <a href="#" class="delete inveDelate" data-id="{{id}}"><i
+                                class="fa fa-trash"></i></a></td>
+                </tr>
+                {{/each}}
+            </table>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,50 @@
+<section>
+
+    <div class="main_dash">
+        {{> layout/leftmenu}}
+        <div class="right_part">
+            <div class="crt">
+                <div class="left_headtxt">
+                    <h4>Edit Profile</h4>
+                </div>
+
+            </div>
+            <div class="clr"></div>
+            <div class="account-form-div">
+                <form action="" class="acccount-form">
+                    <input type="hidden" name="hdnId" id="hdnId" value="{{data.id}}">
+                    <div class="wrap-input100 validate-input">
+                        <label>UserName </label>
+                        <input class="input100" type="text" name="" disabled value="{{data.username}}">
+                    </div>
+                     <div class="wrap-input100 validate-input">
+                        <label>First Name</label>
+                        <input class="input100" type="text" name="first-name" value="{{data.first_name}}">
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                        <label>Last Name</label>
+                        <input class="input100" type="text" name="last-name" value="{{data.last_name}}">
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <label>Email Address</label>
+                        <input class="input100" type="email" name="Email" disabled value="{{data.email}}" disabled>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                        <label>Password</label>
+                        <input class="input100" type="password" name="pass">
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                        <label>Confirm Password</label>
+                        <input class="input100" type="password" name="pass">
+                    </div>
+                    <div class="create_button">
+                        <button type="submit" class="login100-form-btn">SUBMIT</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>

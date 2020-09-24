@@ -1,0 +1,31 @@
+  <main>
+    <div class="login_wrap">
+      <div class="account-form-div">
+        <form name="myForm" action="/login-success" id="request-approval" method="post">
+          <legend class="login_head"> LOGIN </legend>
+          <div class="wrap-input100 validate-input">
+            <label>Email</label>
+            <input class="input100" type="text" name="username" id="username">
+            <p id="msgUsername" style="color: red;text-align:center"> </p>
+            <span id='message'></span>
+          </div>
+
+          <div class="wrap-input100 validate-input">
+            <label>Password</label>
+            <input class="input100" type="password" name="password" id="password">
+            <p id="msgPassword" style="color: red;text-align:center"> </p>
+          </div>
+
+          <div class="button">
+            <button type="submit" class="login100-form-btn">LOGIN</button>
+            {{!-- <input type="submit" class="login100-form-btn" value="LOGIN"> --}}
+            <br>
+            <p class="error" style="text-align: center;">{{#if flash_error}}<span>{{flash_error}}</span>{{/if}}</p>
+          </div>
+        </form>
+        <div class="form-info">
+          <p>Create account &nbsp; <span class="links"> <a href="/signup">Signup</a> </span> </p>
+        </div>
+      </div>
+    </div>
+  </main>

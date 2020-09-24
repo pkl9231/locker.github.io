@@ -1,0 +1,44 @@
+<section>
+
+    <div class="main_dash">
+        {{> layout/leftmenu}}
+        <div class="right_part">
+            <div class="crt">
+                <div class="left_headtxt">
+                    <h4>Create Flag</h4>
+                </div>
+
+            </div>
+            <div class="clr"></div>
+            <div class="account-form-div">
+                <form action="" class="acccount-form" id="addred-flag" method="POST">
+                    <div class="wrap-input100 validate-input">
+                        <label>Title</label>
+                        <input class="input100" type="text" name="title" id="title">
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <label>Department</label>
+                        <select class="select100 custom-select" name="department" id="department">
+                            {{#each departmentName}}
+                            <option value={{id}}>{{name}}</option>
+                            {{/each}}
+                        </select>
+
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <label>Description</label>
+                        <textarea name="description" id="description" class="textarea100"></textarea>
+
+                    </div>
+                    <div class="create_button">
+                        <button type="submit" class="login100-form-btn">SUBMIT</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>

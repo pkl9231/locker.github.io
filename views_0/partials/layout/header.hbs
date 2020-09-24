@@ -1,0 +1,17 @@
+<header>
+	{{#if headerEnable}}
+	<div class="dash_logo"> Broadcaster</div>
+	{{!-- Broadcaster --}}
+	<div class="wel_bx">
+		<ul>
+			<p>{{fName}}</p>
+			<li><a href="/logout" style="cursor:pointer;"><button type="button" class="login100-form-btn">Logout</button></a></li>
+		</ul>
+	</div>
+	<div class="clr"></div>
+	{{else}} 
+		<div class="user">
+			 Broadcaster
+		</div>	
+	{{/if}}
+</header>

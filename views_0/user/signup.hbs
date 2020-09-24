@@ -1,0 +1,49 @@
+
+  <main>
+    <main>
+      <div class="login_wrap">
+        <div class="account-form-div">
+         <p class="error" style="text-align: center;">{{#if flash_error}}<span>{{flash_error}}</span>{{/if}}</p>
+          {{!-- <form class="acccount-form" name="signup" action="/signup" method="POST" onsubmit="return validateForm() > --}}
+          <form name="myForm" action="/signup" onsubmit="return validateForm()" method="post" id="myForm">
+            <legend class=" login_head"> Create an Account </legend>
+
+            <div class="wrap-input100 validate-input">
+              <label>First Name</label>
+              <input type="text" class="input100" name="first_name">
+            </div>
+
+            <div class="wrap-input100 validate-input">
+              <label>Last Name</label>
+              <input type="text" class="input100" name="last_name">
+            </div>
+
+            <div class="wrap-input100 validate-input">
+              <label>Email</label>
+              <input type="email" class="input100" name="email">
+            </div>
+
+            <div class="wrap-input100 validate-input">
+              <label>Password</label>
+              <input type="password" class="input100" name="password" id="password">
+            </div>
+
+            <div class="wrap-input100 validate-input">
+              <label>Confirm Password</label>
+              <input type="password" class="input100" name="confirm-password" id="confirm_password" onSubmit = "return checkPassword(this)">
+              <span id='message'></span>
+            </div>
+
+            <div class="button">
+              <button type="submit" class="login100-form-btn"> SIGN UP </button>
+            </div>
+
+          </form>
+          <div class="form-info">
+            <p>Already have an account?&nbsp;<span class="links"><a href="/">Login</a></span></p>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </main>
